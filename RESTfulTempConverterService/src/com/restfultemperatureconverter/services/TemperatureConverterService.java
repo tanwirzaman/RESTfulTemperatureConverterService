@@ -14,7 +14,7 @@ public class TemperatureConverterService {
 	@GET  
 	@Path("/CelciusToFahrenheit/{c}")  
 	@Produces(MediaType.TEXT_XML)  
-	public String convertInchToFeet(@PathParam("c") int c) {  
+	public String convertCelciusToFahrenheit(@PathParam("c") int c) {  
 
 		int celcius=c;  
 		double fahrenheit = 0;  
@@ -29,7 +29,7 @@ public class TemperatureConverterService {
 	@Path("/FahrenheitToCelcius/{f}")  
 	@GET  
 	@Produces(MediaType.TEXT_XML)  
-	public String convertFeetToInch(@PathParam("f") int f) {  
+	public String convertFahrenheitToCelcius(@PathParam("f") int f) {  
 		
 		double celcius=0;  
 		int fahrenheit = f;  
